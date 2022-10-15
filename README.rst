@@ -1,6 +1,6 @@
-===============
-**aws-connect**
-===============
+=====================
+**aws-authenticator**
+=====================
 
 Overview
 --------
@@ -39,17 +39,17 @@ Installation:
 
 .. code-block:: BASH
 
-   pip3 install aws-connect
+   pip3 install aws-authenticator
    # or
-   python3 -m pip install aws-connect
+   python3 -m pip install aws-authenticator
 
 In Python3 authenticating with named profiles:
 
 .. code-block:: PYTHON
 
-   import aws_connect
+   import aws_authenticator
 
-   auth = aws_connect.AWSConnect(
+   auth = aws_authenticator.AWSAuthenticator(
       profile_name="<profile-name>",
    )
    session = auth.profile()
@@ -59,9 +59,9 @@ In Python3 authenticating with IAM access key credentials:
 
 .. code-block:: PYTHON
 
-   import aws_connect
+   import aws_authenticator
 
-   auth = aws_connect.AWSConnect(
+   auth = aws_authenticator.AWSAuthenticator(
       access_key_id="<access-key-id>",
       secret_access_key="<secret-access-key>",
    )
@@ -72,9 +72,9 @@ In Python3 authenticating with SSO:
 
 .. code-block:: PYTHON
 
-   import aws_connect
+   import aws_authenticator
 
-   auth = aws_connect.AWSConnect(
+   auth = aws_authenticator.AWSAuthenticator(
       sso_url="<sso-url>",
       sso_role_name="<sso-role-name>",
       ssp_account_id="<ssp-account-id>",
@@ -86,6 +86,6 @@ Testing profile-based login as a script in BASH:
 
 .. code-block:: BASH
 
-   python [/path/to/]aws_connect \
+   python [/path/to/]aws_authenticator \
    -m profile \
    -p <profile-name>
