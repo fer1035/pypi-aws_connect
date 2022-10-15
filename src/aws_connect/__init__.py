@@ -6,7 +6,7 @@ import boto3
 __version__ = "2022.10.1.0"
 
 
-class AWSConnect:
+class AWSAuthenticator:
     """Login to AWS using CLI named profiles, IAM access key credentials, or SSO."""
 
     def __init__(
@@ -155,7 +155,7 @@ def main():
     params = get_params()
     if params.auth_method not in ["profile", "iam", "sso"]:
         raise Exception("Invalid auth method")
-    auth = AWSConnect(
+    auth = AWSAuthenticator(
         profile_name=params.profile_name,
         access_key_id=params.access_key_id,
         secret_access_key=params.secret_access_key,

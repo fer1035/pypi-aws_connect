@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "aws_connect"
+name = "aws_authenticator"
 version = "2022.10.1.0"
 description = "Login to AWS using CLI named profiles, IAM access key credentials, or SSO."
 readme = "README.rst"
