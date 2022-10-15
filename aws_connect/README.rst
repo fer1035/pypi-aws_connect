@@ -1,6 +1,6 @@
-======================
-**aws-access-advisor**
-======================
+===============
+**aws-connect**
+===============
 
 Overview
 --------
@@ -15,7 +15,7 @@ Prerequisites
 - *boto3 (https://pypi.org/project/boto3/) >= 1.17.78*
 
 Conditional Arguments
-------------------
+---------------------
 
 If authenticating with named profiles:
 
@@ -45,7 +45,7 @@ Installation:
 
 In Python3 authenticating with named profiles:
 
-.. code-block:: BASH
+.. code-block:: PYTHON
 
    import aws_connect
 
@@ -57,7 +57,7 @@ In Python3 authenticating with named profiles:
 
 In Python3 authenticating with IAM access key credentials:
 
-.. code-block:: BASH
+.. code-block:: PYTHON
 
    import aws_connect
 
@@ -70,7 +70,7 @@ In Python3 authenticating with IAM access key credentials:
 
 In Python3 authenticating with SSO:
 
-.. code-block:: BASH
+.. code-block:: PYTHON
 
    import aws_connect
 
